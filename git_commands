@@ -19,3 +19,16 @@ origin	https://github.com/jhontoc/Devnet_script.git (fetch)
 origin	https://github.com/jhontoc/Devnet_script.git (push)
 
 date=08/05
+
+for git branch creation
+git branch 'new_branch_name'
+to switch to the branch
+git checkout 'new_branch_name'
+if you want to delete 
+git branch -D 'new_branch_name'
+if you want to create and switch to the new branch
+git checkout -b 'new_branch_name'
+if you want to see the current branch status
+git branch
+if you want to merge in the current branch 'master' from the adv_code
+git merge adv_code
