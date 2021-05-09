@@ -1,0 +1,19 @@
+<git init>
+//this create a local repository in the current directory>
+or you can use git init directory//
+
+<git init 'directory'>
+//create a emty repository in the specific directory
+
+<git add file .>
+you move your file to the sticky area
+<git commit -m 'message'>
+just to save your new change
+
+how to connect with your repository
+<git remote -v>
+<git remote add 'name' 'directory=https://github.."'
+<git push -u 'url=https://github' 'the current branch_name=master'
+
+origin	https://github.com/jhontoc/Devnet_script.git (fetch)
+origin	https://github.com/jhontoc/Devnet_script.git (push)
