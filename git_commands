@@ -37,5 +37,10 @@ git diff adv_code
 if you want to shows the differences between your most recent commit and your current working directory
 it is very useful for seeing what will happen with your next commit
 git diff HEAD
+how can you check diff
+@@ -34,6 +34,8 @@
+In this header example, 6 lines have been extracted starting from line number 34. Additionally, 8 lines have been added starting at line number 34.
+
+The remaining content of the diff chunk displays the recent changes. Each changed line is prepended with a + or - symbol indicating which version of the diff input the changes come from. As we previously discussed, - indicates changes from the a/diff_test.txt and + indicates changes from b/diff_test.txt
 
 09/05/2021
