@@ -32,3 +32,8 @@ if you want to see the current branch status
 git branch
 if you want to merge in the current branch 'master' from the adv_code
 git merge adv_code
+if you want to compare between branches
+git diff adv_code
+if you want to shows the differences between your most recent commit and your current working directory
+it is very useful for seeing what will happen with your next commit
+git diff HEAD
