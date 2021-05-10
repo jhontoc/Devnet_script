@@ -20,6 +20,20 @@ origin	https://github.com/jhontoc/Devnet_script.git (push)
 
 date=08/05
 
+if you want to move a file and its index
+git mv (-f) (source) (destination)
+
+if you want to remove it from index
+git rm (-r) (-f) (folder/file.py)
+# git add newfile
+# git status
+On branch master
+No commits yet
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+    new file:   newfile
+
 for git branch creation
 git branch 'new_branch_name'
 to switch to the branch
