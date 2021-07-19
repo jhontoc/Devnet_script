@@ -1,2 +1,3 @@
 in this directory i will save all my scripts for my devnet exam preparetation.
 every change is tracking
+in this directory i will save all my scripts for my devnet exam preparetation.             every change is trackin             ending our_configurationin this directory i will save all my scripts for my devnet exam preparetation.             every change is trackin             ending our_configurationin this directory i will save all my scripts for my devnet exam preparetation.             every change is trackin             ending our_configuration

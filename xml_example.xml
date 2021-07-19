@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nf:rpc-reply xmlns="http://www.cisco.com/nxos:9.3.7.:pfm" xmlns:nf="urn:ietf:pa rams:xml:ns:netconf:base:1.0">
+	<nf:data>
+		<show>
+			<inventory>
+				<__readonly__>
+					<TABLE_inv>
+						<ROW_inv>
+							<name>"Chassis"</name>
+							<desc>"Nexus9000 C9336C-FX2 Chassis"</desc>
+							<productid>N9K-C9336C-FX2</productid>
+							<vendorid>V03</vendorid>
+							<serialnum>FDO2330117S</serialnum>
+						</ROW_inv>
+						<ROW_inv>
+							<name>"Slot 1"</name>
+							<desc>"36x40/100G QSFP28 Ethernet Module"</desc>
+							<productid>N9K-C9336C-FX2</productid>
+							<vendorid>V03</vendorid>
+							<serialnum>FDO2330117S</serialnum>
+						</ROW_inv>
+						<ROW_inv>
+							<name>"Power Supply 1"</name>
+							<desc>"Nexus9000 C9336C-FX2 Chassis Power Supply"</desc>
+							<productid>NXA-PAC-1100W-PE2</productid>
+							<vendorid>V01</vendorid>
+							<serialnum>ART2332FAZM</serialnum>
+						</ROW_inv>
+						<ROW_inv>
+							<name>"Power Supply 2"</name>
+							<desc>"Nexus9000 C9336C-FX2 Chassis Power Supply"</desc>
+							<productid>NXA-PAC-1100W-PE2</productid>
+							<vendorid>V01</vendorid>
+							<serialnum>ART2332FAZH</serialnum>
+						</ROW_inv>
+						<ROW_inv>
+							<name>"Fan 1"</name>
+							<desc>"Nexus9000 C9336C-FX2 Chassis Fan Module"</desc>
+							<productid>NXA-FAN-65CFM-PE</productid>
+							<vendorid>V01</vendorid>
+							<serialnum>N/A</serialnum>
+						</ROW_inv>
+						<ROW_inv>
+							<name>"Fan 2"</name>
+							<desc>"Nexus9000 C9336C-FX2 Chassis Fan Module"</desc>
+							<productid>NXA-FAN-65CFM-PE</productid>
+							<vendorid>V01</vendorid>
+							<serialnum>N/A</serialnum>
+						</ROW_inv>
+						<ROW_inv>
+							<name>"Fan 3"</name>
+							<desc>"Nexus9000 C9336C-FX2 Chassis Fan Module"</desc>
+							<productid>NXA-FAN-65CFM-PE</productid>
+							<vendorid>V01</vendorid>
+							<serialnum>N/A</serialnum>
+						</ROW_inv>
+					</TABLE_inv>
+				</__readonly__>
+			</inventory>
+		</show>
+	</nf:data>
+</nf:rpc-reply>

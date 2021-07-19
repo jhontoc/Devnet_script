@@ -1,0 +1,18 @@
+
+import sys
+import requests
+response=requests.get('https://www.eldolar.info/es-MX/mexico/dia/hoy')
+response.encoding = 'utf-8'
+print(response.json())
+
+"""
+with open('README.txt','a+') as f:
+    print(f.read())
+    f.write('in this directory i will save all my scripts for my devnet exam preparetation.\
+             every change is trackin\
+             ending our_configuration')
+
+
+"""
+
+

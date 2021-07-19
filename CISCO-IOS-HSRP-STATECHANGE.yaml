@@ -1,0 +1,44 @@
+#Dec 19 08:29:12 Forwarded from mbr01.dal08: mbr01.dal08 17752297: .Dec 19 14:26:20.458: %HSRP-5-STATECHANGE: Vlan18 Grp 1 state Standby -> Active
+#{
+#    "mnemonic": "STATECHANGE", 
+#    "vendor": "Cisco", 
+#    "facility": "HSRP", 
+#    "dc": "FakeDc", 
+#    "vlan1": "18", 
+#    "subfacility": null, 
+#    "severity": "5", 
+#    "region": "FakeRegion", 
+#    "hostname": "mbr01.dal08", 
+#    "version": "FakeVersion", 
+#    "vlanState1": "Active", 
+#    "submessage": "Vlan18 Grp 1 state Standby -> Active", 
+#    "model": "FakeModel", 
+#    "os": "FakeOperatingSystem"
+#}
+template-id: basic_syslog_alert_priority
+dbrps:
+- db: logs
+  rp: autogen
+
+vars:
+  measurement:
+    type: string
+    value: "netdevice_syslogs"
+  logic:
+    type: lambda
+    value: " \"_vendor\" == 'Cisco' AND \"_os\" == 'IOS' AND \"_facility\" == 'HSRP' AND \"_mnemonic\" == 'STATECHANGE'"
+  event:
+    type: lambda
+    value: "\"facility\" + '-' + \"mnemonic\""
+  feature_extract:
+    type: lambda
+    value: "regexReplace(/Vlan([0-9]{1,2}) Grp ([0-9]) state (.*)/,\"submessage\",'Vlan$1 Grp $2-$3')"
+  alert_severity:
+    type: string
+    value: "WARN"
+  alert_text:
+    type: lambda
+    value: "\"submessage\""
+  alert_priority:
+    type: int
+    value: 2
