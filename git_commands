@@ -1,4 +1,6 @@
-
+1
+2
+3
 <git init>
 //this create a local git db in the current directory>
 or you can use git init directory//
