@@ -27,11 +27,19 @@ def network_device_list(dnac,token):
     response=requests.request("GET",url,headers=headers,verify=False)
     data=response.json()
 
-    for item in data['response']:
-        dnac_devices.add_row([item['hostname'],item['platformId'],item["softwareType"],item['softwareVersion'],item['lastUpdated'],item['managementIpAddress']])
+    if requests.codes.ok == 200:
+        for item in data['response']:
+            dnac_devices.add_row([item['hostname'],item['platformId'],item["softwareType"],item['softwareVersion'],item['lastUpdated'],item['managementIpAddress']])
 
 login=dnac_login(dnac['host'],dnac['username'],dnac['password'])
 network_device_list(dnac,login)
 #print(json.dumps(output,indent=4))
 print(dnac_devices)
 
+dict={"1":"item1",
+      "2":"item2",
+      'mylist':[10,20],
+      'nested_dict':{"1":'item1',
+                     '2':'item2'
+                     }
+      }
