@@ -1,3 +1,4 @@
+
 <git init>
 //this create a local git db in the current directory>
 or you can use git init directory//
@@ -7,7 +8,11 @@ or you can use git init directory//
 <git clone>
 //importat command to create a local copy in the directory
 //git clone https://wwwin-github.cisco.com/Walmart/WM-tools-reporting
-//
+//git:// or user@server:path/to/repo.git
+
+
+
+end
 <git add file .>
 you move your file to the sticky area
 <git commit -m 'message'>
